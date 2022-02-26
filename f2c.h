@@ -7,7 +7,7 @@
 #ifndef F2C_INCLUDE
 #define F2C_INCLUDE
 
-#ifndef INTEGER_STAR_8	
+#ifndef INTEGER_STAR_8
 #define INTEGER_STAR_8
 #endif
 
@@ -132,7 +132,9 @@ union Multitype {	/* for multiple entry points */
 	integer1 g;
 	shortint h;
 	integer i;
-	/* longint j; */
+#ifdef INTEGER_STAR_8
+	 longint j;
+#endif
 	real r;
 	doublereal d;
 	complex c;
