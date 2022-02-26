@@ -1,0 +1,1 @@
+C:\Users\smart\appdata\roaming\python\python310\Scripts\fprettify.exe %1
