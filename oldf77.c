@@ -41,6 +41,7 @@ static integer c__9 = 9;
     /* Builtin functions */
     integer s_wsle(cilist *), do_lio(integer *, integer *, char *, ftnlen), 
 	    e_wsle(void);
+    /* Subroutine */ int s_copy(char *, char *, ftnlen, ftnlen);
 
     /* Local variables */
     static real r4;
@@ -79,7 +80,7 @@ static integer c__9 = 9;
     do_lio(&c__11, &c__1, (char *)&ii1, (ftnlen)sizeof(integer1));
     do_lio(&c__2, &c__1, (char *)&ii2, (ftnlen)sizeof(shortint));
     do_lio(&c__3, &c__1, (char *)&ii4, (ftnlen)sizeof(integer));
-    //do_lio(&c__14, &c__1, (char *)&ii8, (ftnlen)sizeof(longint));
+    do_lio(&c__14, &c__1, (char *)&ii8, (ftnlen)sizeof(longint));
     e_wsle();
     s_wsle(&io___12);
     do_lio(&c__12, &c__1, (char *)&ll1, (ftnlen)sizeof(logical1));
@@ -108,6 +109,19 @@ static integer c__9 = 9;
     modglobalcomm_1.gval = -modglobalcomm_1.gval;
     for (ii = 10; ii >= 1; --ii) {
 	modglobalcomm_1.garr[ii - 1] = -modglobalcomm_1.garr[ii - 1];
+    }
+    if (modglobalcomm_1.gval > 0) {
+	s_copy(modglobalcomm_1.gstr, "hello", (ftnlen)80, (ftnlen)5);
+	for (ii = 5; ii >= 1; --ii) {
+	    s_copy(modglobalcomm_1.gstrarr + (ii - 1 << 4), "hello", (ftnlen)
+		    16, (ftnlen)5);
+	}
+    } else {
+	s_copy(modglobalcomm_1.gstr, "world", (ftnlen)80, (ftnlen)5);
+	for (ii = 5; ii >= 1; --ii) {
+	    s_copy(modglobalcomm_1.gstrarr + (ii - 1 << 4), "world", (ftnlen)
+		    16, (ftnlen)5);
+	}
     }
     return 0;
 } /* oldf77_ */

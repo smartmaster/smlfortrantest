@@ -34,6 +34,7 @@ static integer c__5 = 5;
     /* Builtin functions */
     integer s_wsle(cilist *), do_lio(integer *, integer *, char *, ftnlen), 
 	    e_wsle(void);
+    /* Subroutine */ int s_copy(char *, char *, ftnlen, ftnlen);
 
     /* Local variables */
     static longint ii;
@@ -62,6 +63,19 @@ static integer c__5 = 5;
     modglobalcomm_1.gval = -modglobalcomm_1.gval;
     for (ii = 10; ii >= 1; --ii) {
 	modglobalcomm_1.garr[ii - 1] = -modglobalcomm_1.garr[ii - 1];
+    }
+    if (modglobalcomm_1.gval > 0) {
+	s_copy(modglobalcomm_1.gstr, "hello", (ftnlen)80, (ftnlen)5);
+	for (ii = 5; ii >= 1; --ii) {
+	    s_copy(modglobalcomm_1.gstrarr + (ii - 1 << 4), "hello", (ftnlen)
+		    16, (ftnlen)5);
+	}
+    } else {
+	s_copy(modglobalcomm_1.gstr, "world", (ftnlen)80, (ftnlen)5);
+	for (ii = 5; ii >= 1; --ii) {
+	    s_copy(modglobalcomm_1.gstrarr + (ii - 1 << 4), "world", (ftnlen)
+		    16, (ftnlen)5);
+	}
     }
     return 0;
 } /* oldf7701_ */

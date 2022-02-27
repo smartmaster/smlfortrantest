@@ -19,6 +19,18 @@
               garr(ii) = -garr(ii)
            end do
 
+           if (gval .GT. 0) then
+            gstr = "hello"
+            do ii = 5, 1, -1
+               gstrarr(ii) = "hello"
+            end do
+           else
+            gstr = "world"
+            do ii = 5, 1, -1
+               gstrarr(ii) = "world"
+            end do
+           end if
+
         end subroutine
 
 

@@ -1,0 +1,1 @@
+extern int oldf7704_(integer *ii1, char *cc1, longint *ii2, char *cc2, integer *arr, integer *arrlen, ftnlen cc1_len, ftnlen cc2_len);
