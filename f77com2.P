@@ -1,0 +1,2 @@
+extern int f77comm2_(void);
+/* comlen f77comm_ 248 */

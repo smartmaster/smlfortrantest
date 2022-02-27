@@ -47,11 +47,22 @@ contains
 
       integer*8 testCase; 
 
-      testCase = 0; 
+      testCase = 1; 
       select case (testCase)
       case (2)
          continue; 
       case (1)
+         call f77ucomm1()
+         call f77ucomm2()
+         call f77ucomm1()
+         call f77ucomm2()
+         call f77ucomm1()
+         call f77ucomm2()
+         
+         call f77comm2();
+         call f77comm1();
+         call f77comm2();
+         call f77comm1();
          continue; 
       case (0)
          call PassArrArr();

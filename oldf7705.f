@@ -8,6 +8,7 @@
 
 
             integer ii
+            integer temp
 
             do ii = 1, arrlen
                 write(*,*) strarr(ii)
@@ -17,7 +18,12 @@
 
             arri(1) = 17
             arri(2) = 17
-            arri(3:4) = arri(1:2)
+
+            do temp=1,2
+                arri(temp+2) = arri(temp)
+            end do
+
+            
             strarr(1)(2:5) = 'AAAAAAAAAAAAA'
 
             write(*,*) arri
