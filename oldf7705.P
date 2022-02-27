@@ -1,0 +1,1 @@
+extern int oldf7705_(char *strarr, integer *arrlen, ftnlen strarr_len);

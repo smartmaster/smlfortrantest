@@ -1,5 +1,6 @@
 #!/usr/bin/bash
 
-exe=main
+exe=main.exe
 
 rm $exe
+rm *.mod
