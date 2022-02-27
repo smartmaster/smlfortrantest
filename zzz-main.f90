@@ -16,6 +16,7 @@ contains
          call OldF77();
          call OldF7701();
          call OldF7702();
+         call CallOthers();
          call TestGlobalData1();
          call TestGlobalData2();
          call TestGlobalData1();

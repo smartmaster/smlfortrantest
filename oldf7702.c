@@ -1,4 +1,4 @@
-/* oldf77-01.f -- translated by f2c (version 20200916).
+/* C:\zzz-temp\fortrantest\oldf7702.f -- translated by f2c (version 20200916).
    You must link the resulting object file with libf2c:
 	on Microsoft Windows system, link with libf2c.lib;
 	on Linux or Unix systems, link with .../path/to/libf2c.a -lm
@@ -29,7 +29,7 @@ static integer c__10 = 10;
 static integer c__9 = 9;
 static integer c__5 = 5;
 
-/* Subroutine */ int oldf7701_(void)
+/* Subroutine */ int oldf7702_(void)
 {
     /* Builtin functions */
     integer s_wsle(cilist *), do_lio(integer *, integer *, char *, ftnlen), 
@@ -64,5 +64,5 @@ static integer c__5 = 5;
 	modglobalcomm_1.garr[ii - 1] = -modglobalcomm_1.garr[ii - 1];
     }
     return 0;
-} /* oldf7701_ */
+} /* oldf7702_ */
 

@@ -1,0 +1,2 @@
+extern int modglobalcomminit_(void);
+/* comlen modglobalcomm_ 248 */

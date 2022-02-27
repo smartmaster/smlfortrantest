@@ -1,0 +1,2 @@
+extern int oldf7701_(void);
+/* comlen modglobalcomm_ 248 */

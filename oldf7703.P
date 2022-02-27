@@ -1,0 +1,4 @@
+extern int oldf7703_(void);
+/*:ref: oldf77_ 14 0 */
+/*:ref: oldf7701_ 14 0 */
+/*:ref: oldf7702_ 14 0 */

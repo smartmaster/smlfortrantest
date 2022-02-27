@@ -1,5 +1,6 @@
 {
     "files.associations": {
-        "f2c.h": "c"
+        "f2c.h": "c",
+        "*.p": "cpp"
     }
 }

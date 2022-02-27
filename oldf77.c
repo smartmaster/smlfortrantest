@@ -1,4 +1,4 @@
-/* oldf77.f -- translated by f2c (version 20200916).
+/* C:\zzz-temp\fortrantest\oldf77.f -- translated by f2c (version 20200916).
    You must link the resulting object file with libf2c:
 	on Microsoft Windows system, link with libf2c.lib;
 	on Linux or Unix systems, link with .../path/to/libf2c.a -lm
@@ -79,7 +79,7 @@ static integer c__9 = 9;
     do_lio(&c__11, &c__1, (char *)&ii1, (ftnlen)sizeof(integer1));
     do_lio(&c__2, &c__1, (char *)&ii2, (ftnlen)sizeof(shortint));
     do_lio(&c__3, &c__1, (char *)&ii4, (ftnlen)sizeof(integer));
-    do_lio(&c__14, &c__1, (char *)&ii8, (ftnlen)sizeof(longint));
+    //do_lio(&c__14, &c__1, (char *)&ii8, (ftnlen)sizeof(longint));
     e_wsle();
     s_wsle(&io___12);
     do_lio(&c__12, &c__1, (char *)&ll1, (ftnlen)sizeof(logical1));
